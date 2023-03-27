@@ -199,10 +199,29 @@ header .navbar ul li a.nav-link{
     .column-container{
         flex-direction: column;
     }
+    #box-style-section .column-container{
+        flex-direction: row !important;
+    }
+    #service-section .service-column{
+        padding-left:150px;
+        padding-right: 150px;
+        padding-bottom: 30px;
+    }
 }
 
 @media screen and (max-width:767px){
-   
+    h1{
+        font-size: 40px !important;
+        line-height: 1 !important;
+    }
+    h2{
+        font-size: 30px !important;
+        line-height: 1.2 !important;
+        font-weight: 600 !important;
+    }
+    p{
+        font-size: 18px;
+    }
     .image-wrapper img{
         width: 350px;
     }
@@ -244,5 +263,18 @@ header .navbar ul li a.nav-link{
     }
     #banner-section{
         background-image: none;
+    }
+    #banner-section .content-wrapper h1, #banner-section .content-wrapper p{
+        padding-right: 0;
+    }
+    #service-section .service-column{
+        padding-left:0px;
+        padding-right: 0px;
+    }
+    #banner-section{
+        padding-bottom: 0;
+    }
+    #service-section h2.title{
+        padding-bottom: 30px;
     }
 }
